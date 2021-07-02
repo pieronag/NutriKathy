@@ -6,17 +6,17 @@ import {
   Image,
   Button,
 } from 'react-native';
-import AgregarFruta from './AgregarFruta';
+
 import Header from './Header';
 
-export default function home({navigator}){
+const Home = ({ navigation }) => {
     return (
         <View>
             <Header />
             <Image style={styles.imagen} source={require('../assets/img/logo.png')} />
             <Text>Agregar Fruta o Verdura</Text>
             <Button     
-                onPress={() => navigator.navigate('AgregarFruta')}
+                onPress={() => {navigation.navigate('AgregarFruta')}}
                 title="AGREGAR"
                 color="#f1afbb"
                 style={styles.boton}
@@ -39,3 +39,5 @@ const styles = StyleSheet.create({
         alignSelf:'center',
     }
   })
+
+export default Home;

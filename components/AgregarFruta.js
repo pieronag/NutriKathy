@@ -9,9 +9,10 @@ import {
   FlatList,
   Modal,
 } from 'react-native';
+
 import Header from './Header';
 
-export default function agregarFruta({navigator}){
+const AgregarFruta = ({navigator}) => {
   
   const [inputText, setInputText] = useState('');
   const [inputError, setInputError] = useState('');
@@ -213,3 +214,5 @@ const styles = StyleSheet.create({
       elevation: 9,
     }
   });
+
+  export default AgregarFruta;
