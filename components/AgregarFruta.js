@@ -12,7 +12,7 @@ import {
 
 import Header from './Header';
 
-const AgregarFruta = ({navigator}) => {
+const AgregarFruta = () => {
   
   const [inputText, setInputText] = useState('');
   const [inputError, setInputError] = useState('');
