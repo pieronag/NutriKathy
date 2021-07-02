@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingTop: 85,
     color: 'white',
+    fontFamily: 'KGT'
   },
 })
 
