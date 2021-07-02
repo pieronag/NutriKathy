@@ -6,12 +6,12 @@ import {
   View,
 } from 'react-native';
 
-import Header from './components/Header';
-import AgregarFruta from './components/AgregarFruta.js';
-import Home from './components/Home.js';
+import Navigator from './components/Navigator.js';
 
 import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
+
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   
@@ -27,11 +27,10 @@ export default function App() {
   }
 
   return (
-    <View style={styles.screen}>
-      <Header />
-      <Home />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Navigator />
+    </NavigationContainer>
+    
   );
 }
 

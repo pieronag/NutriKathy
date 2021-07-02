@@ -9,8 +9,10 @@ import {
   FlatList,
   Modal,
 } from 'react-native';
+import Header from './Header';
 
-const AgregarFruta = () => {
+export default function agregarFruta({navigator}){
+  
   const [inputText, setInputText] = useState('');
   const [inputError, setInputError] = useState('');
   const [itemList, setItemList] = useState([]);
@@ -62,6 +64,7 @@ const AgregarFruta = () => {
 
   return (
     <View style= {styles.screen}>
+        <Header />
         <View style={styles.inputContainer}>
           <TextInput
             placeholder="Agregar Fruta o Verdura"
@@ -125,6 +128,7 @@ const AgregarFruta = () => {
       </View>
   );
 }
+  
 
 const styles = StyleSheet.create({
     screen: {
@@ -209,6 +213,3 @@ const styles = StyleSheet.create({
       elevation: 9,
     }
   });
-
-  export default AgregarFruta
-  
