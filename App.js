@@ -2,16 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import {
   StyleSheet,
-  TextInput,
-  Button,
-  Text,
+  Image,
   View,
-  FlatList,
-  Modal,
 } from 'react-native';
 
 import Header from './components/Header';
 import AgregarFruta from './components/AgregarFruta.js';
+import Home from './components/Home.js';
 
 import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
@@ -32,7 +29,7 @@ export default function App() {
   return (
     <View style={styles.screen}>
       <Header />
-      <AgregarFruta />
+      <Home />
       <StatusBar style="auto" />
     </View>
   );

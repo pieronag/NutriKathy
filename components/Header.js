@@ -3,6 +3,7 @@ import {
   StyleSheet, 
   Text,
   View,
+  Image,
 } from 'react-native';
 
 const Header = () => {
@@ -25,6 +26,14 @@ const styles = StyleSheet.create({
     paddingTop: 85,
     color: 'white',
     fontFamily: 'KGT'
+  },
+  imagen: {
+    alignSelf:'flex-start',
+    resizeMode: 'stretch',
+    width: 50,
+    height: 50,
+    marginTop: -50,
+    marginLeft: 20,
   },
 })
 
